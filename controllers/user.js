@@ -1,4 +1,3 @@
-// Load required packages
 var User = require('../models/user');
 
 // Create endpoint /api/users for POST
