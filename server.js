@@ -44,6 +44,7 @@ router.route('/users')
     .get(authController.isAuthenticated, userController.getUsers);
 
 
-
-// Start the server
-app.listen(3000);
+app.listen(3000, function(){
+    console.log('The server is running, ' +
+        ' please, open your browser at http://localhost:%s',
+        3000); });
