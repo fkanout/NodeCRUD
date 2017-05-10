@@ -1,0 +1,4 @@
+.idea
+.env
+lib/
+node_modules
