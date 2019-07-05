@@ -4,7 +4,9 @@
   "description": "FULL STACK APPLICATION",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Faisal KANOUT",
   "license": "ISC",
@@ -14,6 +16,8 @@
     "express": "^4.13.4",
     "mongoose": "^4.9.8",
     "passport": "^0.3.2",
-    "passport-http": "^0.3.0"
-  }
+    "passport-http": "^0.3.0",
+    "snyk": "^1.192.3"
+  },
+  "snyk": true
 }
